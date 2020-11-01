@@ -82,10 +82,10 @@ public class CityListTest {
     @Test
     void testCountCities(){
         CityList cityList = mockCityList();
-        assertEquals(2,cityList.countCities());
+        assertEquals(1,cityList.countCities());
 
-//         cityList.add(new City("Charlottetown", "Prince Edward Island"));
-//         assertEquals(2,cityList.countCities());
+        cityList.add(new City("Charlottetown", "Prince Edward Island"));
+        assertEquals(2,cityList.countCities());
     }
 
 
